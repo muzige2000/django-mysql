@@ -244,7 +244,7 @@ class KeyTransform(Transform):
                 path.append("[{}]".format(num))
             except ValueError:  # non-integer
                 path.append(".")
-                path.append(key_transform)
+                path.append("\"{}\"", key_transform)
         return "".join(path)
 
 
